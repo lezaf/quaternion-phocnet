@@ -6,12 +6,12 @@
 In our work, we transform PHOCNet from a conventional CNN to a Quaternionic CNN (QCNN). The objective is that with QCNN we can create a parameters-efficient network (appr. 1/4 of parameters) with equivalent (or better) performance and far better generalization ability. We focused on the case of QbE, not limiting our system to work for QbS with minimum adaptations. The final system produced uses KWS to retrieve pages (in image format) from a collection containing a query word.
 
 # Installation
-Use `requirements.txt` file to setup the environment with the necessary dependencies.
+Use [requirements.txt](/requirements.txt) file to setup the environment with the necessary dependencies.
 
 # Usage
 
 ### Training
-To train a Q-PHOCNet model run `train.py` script with minimum arguments as follows:
+To train a Q-PHOCNet model run [train.py](/experiments/train.py) script with minimum arguments as follows:
 
 ```
 python train.py -ds <dataset_name> -sn <trained_model_name>.pt
@@ -27,7 +27,7 @@ Available datasets for training so far are GW and IAM. Using another dataset nee
 For all available arguments see `def train()` in `train.py`.
 
 ### Retrieval
-To retrieve images that contain a QbE run `retrieval_with_qbe.py` as follows:
+To retrieve images that contain a QbE run [retrieval_with_qbe.py](/retrieval/retrieval_with_qbe.py) as follows:
 
 ```
 python retrieval_with_qbe.py -ds <dataset_name> -i <path_to_doc_collection> -m <trained_model_path>
@@ -37,8 +37,8 @@ The query image is specified by the user at runtime.
 # Datasets
 We trained our Q-PHOCNet on following datasets:
 
-- [GW dataset](https://fki.tic.heia-fr.ch/databases/washington-database). The dataset is single-writer and contains 4,894 words. We applied data augmentation to get a total of 500,000 word instances.
-- [IAM dataset](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database). The dataset is multi-writer (657 writers) and contains 115,320 words.
+- [GW dataset](https://fki.tic.heia-fr.ch/databases/washington-database): The dataset is single-writer and contains 4,894 words. We applied data augmentation to get a total of 500,000 word instances.
+- [IAM dataset](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database): The dataset is multi-writer (657 writers) and contains 115,320 words.
 
 # Examples
 
