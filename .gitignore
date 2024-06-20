@@ -1,0 +1,8 @@
+/google_colab_notebooks
+/data
+/quaternion_phocnet.egg-info
+**/__pycache__/
+*.pyc
+/experiments/saved_models
+/retrieval/temp_queries
+/retrieval/retrieval_results

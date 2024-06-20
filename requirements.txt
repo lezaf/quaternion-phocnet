@@ -1,0 +1,9 @@
+matplotlib==3.3.3
+numpy==1.18.2
+opencv_python==4.2.0.34
+scikit_learn==0.22.2.post1
+scipy==1.4.1
+setuptools==41.2.0
+skimage==0.0
+torch==1.7.0
+tqdm==4.52.0
