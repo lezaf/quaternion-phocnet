@@ -3,7 +3,7 @@
 # Introduction
 [PHOCNet](https://arxiv.org/abs/1604.00187) is a state-of-the-art deep CNN for Keyword Spotting (KWS) in handwritten documents. Using Pyramidal Histogram of Characters (PHOC) as labels, PHOCNet can achieve outstanding performance in KWS for both Query-by-Example (QbE) and Query-by-String (QbS).
 
-In our work, we transform PHOCNet from a conventional CNN to a Quaternionic CNN (QCNN). The objective is that with QCNN we can create a parameters-efficient network (appr. 1/4 of parameters) with equivalent (or better) performance and far better generalization ability. We focused on the case of QbE, not limiting our system to work for QbS with minimum adaptations. The final system produced uses KWS to retrieve pages (in image format) from a collection containing a query word.
+In our work, we transform PHOCNet from a conventional CNN to a Quaternionic CNN (QCNN). The objective is that with QCNN we can create a parameters-efficient network (appr. 1/4 of parameters) with equivalent (or better) performance and better generalization ability. We focused on the case of QbE, not limiting our system to work for QbS with minimum adaptations. The final system produced uses KWS to retrieve pages (in image format) from a collection containing a query word.
 
 # Installation
 Use [requirements.txt](/requirements.txt) file to setup the environment with the necessary dependencies.
