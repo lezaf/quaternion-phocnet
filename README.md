@@ -9,7 +9,6 @@ In our work, we transform PHOCNet from a conventional CNN to a Quaternionic CNN 
 Use [requirements.txt](/requirements.txt) file to setup the environment with the necessary dependencies.
 
 # Usage
-
 ### Training
 To train a Q-PHOCNet model run [train.py](/experiments/train.py) script with minimum arguments as follows:
 
